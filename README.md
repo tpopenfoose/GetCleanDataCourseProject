@@ -104,8 +104,8 @@ we clean up the labels and use more descriptive variable names
     ## now rename the data set with descriptive variable names
     names(DataSet)[-(1:2)] <- varNames
 
-finally we creat an independent tidy data set with the average of each variable for each activity and each subject
-------------------------------------------------------------------------------------------------------------------
+finally we create an independent tidy data set with the average of each variable for each activity and each subject
+-------------------------------------------------------------------------------------------------------------------
 
     ## 5. create independent tidy data set with average of each variable for each activity and each subject
     IndTidyData <- DataSet %>% select(-matches("ActivityID")) %>%
